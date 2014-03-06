@@ -1,0 +1,41 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=15mm]{geometry}
+\usepackage{tikz}
+\usepackage{pifont}
+\usepackage{graphicx}
+
+\begin{document}
+
+\pgfmathsetmacro{\cardroundingradius}{4mm}
+\pgfmathsetmacro{\striproundingradius}{3mm}
+\pgfmathsetmacro{\cardwidth}{5}
+\pgfmathsetmacro{\cardheight}{8}
+\newcommand{\stripcolor}{red}
+\pgfmathsetmacro{\stripwidth}{1.2}
+\pgfmathsetmacro{\strippadding}{0.1}
+\newcommand{\striptext}{Event \rotatebox[origin=c]{-90}{\ding{49}}}
+\pgfmathsetmacro{\textpadding}{0.3}
+\newcommand{\topcaption}{\textbf{}}
+\newcommand{\nametext}{\textit{Tetracycline}}
+\newcommand{\desc}{Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 2 health}
+\newcommand{\resistance}{}
+\newcommand{\flavor}{\textit{Something interesting here}}
+\pgfmathsetmacro{\ruleheight}{0.1}
+\newcommand{\stripfontsize}{\Huge}
+\newcommand{\captionfontsize}{\LARGE}
+\newcommand{\textfontsize}{\large}
+
+\begin{tikzpicture}
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[\stripcolor,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {\striptext};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \topcaption}\\ 
+        {\textfontsize \nametext}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small \desc}\\
+        {\small \resistance}
+        {\small \flavor}\\
+    };
+\end{tikzpicture}
+
+\end{document}

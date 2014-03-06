@@ -1,0 +1,64 @@
+Type,Class,Name,Description,Resistant to:,Flavor text
+Microbe,Pathogen,Bad News Bug 1,"When this species is in play, you lose 1 additional health at end of turn","Ampicillin,Tetracycline",Something interesting here
+Microbe,Pathogen,Bad News Bug 1,"When this species is in play, you lose 1 additional health at end of turn","Ampicillin,Tetracycline",Something interesting here
+Microbe,Pathogen,Clostridium dificile,"When this species is in play, you lose 2 additional health at end of turn.  In addition you cannot play any ""beneficial only"" microbes","Kanamycin,Tetracycline",Something interesting here
+Microbe,Pathogen,Clostridium dificile,"When this species is in play, you lose 2 additional health at end of turn.  In addition you cannot play any ""beneficial only"" microbes","Kanamycin,Tetracycline",Something interesting here
+Microbe,Pathogen,Bad News Bug 2,"When this species is in play, you lose 1 additional health at end of turn",Kanamycin,Something interesting here
+Microbe,Pathogen,Bad News Bug 2,"When this species is in play, you lose 1 additional health at end of turn",Kanamycin,Something interesting here
+Microbe,Pathogen,Bad News Bug 3,"When this species is in play, you lose 1 additional health at end of turn",Ampicillin,Something interesting here
+Microbe,Pathogen,Bad News Bug 3,"When this species is in play, you lose 1 additional health at end of turn",Ampicillin,Something interesting here
+Microbe,Opportunistic,Bug Op 1,When this species is in play as a beneficial microbe it synthesizes vitamin B5; gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 1,When this species is in play as a beneficial microbe it synthesizes vitamin B5; gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 2,When this species is in play as a beneficial microbe it synthesizes vitamin B2 (riboflavin); gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 2,When this species is in play as a beneficial microbe it synthesizes vitamin B2 (riboflavin); gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 3,When this species is in play as a beneficial microbe it synthesizes vitamin vitamin K; gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 3,When this species is in play as a beneficial microbe it synthesizes vitamin vitamin K; gain one additional health at end of turn ,,Something interesting here
+Microbe,Opportunistic,Bug Op 4,"If this species is in play and you have less than 3 microbes in your beneficial area, it becomes a pathogen immediately ",,Something interesting here
+Microbe,Opportunistic,Bug Op 4,"If this species is in play and you have less than 3 microbes in your beneficial area, it becomes a pathogen immediately ",,Something interesting here
+Microbe,Beneficial,Bug Good 1,When this species is in play you can digest lactose,,Something interesting here
+Microbe,Beneficial,Bug Good 1,When this species is in play you can digest lactose,,Something interesting here
+Microbe,Beneficial,Bug Good 2,When this species is in play you can digest grains,,Something interesting here
+Microbe,Beneficial,Bug Good 2,When this species is in play you can digest grains,,Something interesting here
+Microbe,Beneficial,Bug Good 3,When this species is in play you can digest meat,,Something interesting here
+Microbe,Beneficial,Bug Good 3,When this species is in play you can digest meat,,Something interesting here
+Event,,Prebiotics,This card allows you to play an additional microbe this turn,,Something interesting here
+Event,,Prebiotics,This card allows you to play an additional microbe this turn,,Something interesting here
+Event,,Fungal Infection,"Play on any player, if that player has less than three active non-pathogen microbes they lose 2 health at the end of every turn.  Discard when they have three or more non-pathogen microbes in play. ",,Something interesting here
+Event,,Fungal Infection,"Play on any player, if that player has less than three active non-pathogen microbes they lose 2 health at the end of every turn.  Discard when they have three or more non-pathogen microbes in play. ",,Something interesting here
+Event,,Steak,"If you have the ability to digest meat, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Steak,"If you have the ability to digest meat, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Bread,"If you have the ability to digest grains, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Bread,"If you have the ability to digest grains, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Milk,"If you have the ability to digest lactose, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Milk,"If you have the ability to digest lactose, gain 2 health immediately for each microbe with that ability.",,Something interesting here
+Event,,Fecal Transplant,"This card removes all pathogens from one player (regardless of resistance), they lose 4 health",,Something interesting here
+Event,,Fecal Transplant,"This card removes all pathogens from one player (regardless of resistance), they lose 4 health",,Something interesting here
+Event,,Vitamins,"For each vitamin producing microbe in your beneficial area, gain 2 health immediately",,Something interesting here
+Event,,Vitamins,"For each vitamin producing microbe in your beneficial area, gain 2 health immediately",,Something interesting here
+Event,,Bacteriophage therapy,Destroy any one microbe in play,,Something interesting here
+Event,,Bacteriophage therapy,Destroy any one microbe in play,,Something interesting here
+Event ,,Lateral gene transfer,"Play on any plasmid, move that plasmid to another microbe within the same player",,Something interesting here
+Event ,,Lateral gene transfer,"Play on any plasmid, move that plasmid to another microbe within the same player",,Something interesting here
+Event,,Shepard's pie,"If you have the ability to digest meat, grains, and lactose, gain 6 health immediately",,Something interesting here
+Event,,Shepard's pie,"If you have the ability to digest meat, grains, and lactose, gain 6 health immediately",,Something interesting here
+Event,,Active culture yogurt,"If you have the ability to digest lactose, gain 2 health immediately.  In addition draw from the deck and place the first non-pathogen in your beneficial area.",,Something interesting here
+Event,Plasmid,Tetracycline resistance plasmid,Give any single microbe resistance to Tetracycline,,Something interesting here
+Event,Plasmid,Tetracycline resistance plasmid,Give any single microbe resistance to Tetracycline,,Something interesting here
+Event,Plasmid,Kanamycin resistance plasmid,Give any single microbe resistance to Kanamycin,,Something interesting here
+Event,Plasmid,Kanamycin resistance plasmid,Give any single microbe resistance to Kanamycin,,Something interesting here
+Event,Plasmid,Ampicillin resistance plasmid,Give any single microbe resistance to Ampicillin,,Something interesting here
+Event,Plasmid,Ampicillin resistance plasmid,Give any single microbe resistance to Ampicillin,,Something interesting here
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa ",,Something interesting here
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa ",,Something interesting here
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa ",,Something interesting here
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa ",,Something interesting here
+Event,,Tetracycline,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 2 health",,Something interesting here
+Event,,Tetracycline,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 2 health",,Something interesting here
+Event,,Kanamycin,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 2 health",,Something interesting here
+Event,,Kanamycin,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 2 health",,Something interesting here
+Event,,Ampicillin,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 1 health",,Something interesting here
+Event,,Ampicillin,"Target player removes a pathogen of their choice, and loses half of the non-resistant microbes in their beneficial area (rounded down), and 1 health",,Something interesting here
+Event,,Microbial Diversity,"If you have at least 4 microbes in your beneficial area, remove a pathogen of your choice",,Something interesting here
+Event,,Microbial Diversity,"If you have at least 4 microbes in your beneficial area, remove a pathogen of your choice",,Something interesting here
+Event,,Go to work sick,Lose 2 health and give a pathogen of your choice to target player,,Something interesting here
+Event,,Go to work sick,Lose 2 health and give a pathogen of your choice to target player,,Something interesting here
