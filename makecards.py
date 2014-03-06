@@ -11,6 +11,8 @@ f = open( 'effluence_cards.tex', 'w' )
 
 f.write( header )
 
+page = []
+
 for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
     if n == 0 : continue
    
@@ -32,12 +34,28 @@ for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
 
     if cardtype == 'Event' : drugtext = ''
 
-    f.write(template.replace( '__COLOR__',         color ) \
-                    .replace( '__CARDTITLE__',  cardtype ) \
-                    .replace( '__TOPTITLE__',  cardclass ) \
-                    .replace( '__NAME__',           name ) \
-                    .replace( '__DESC__',    description ) \
-                    .replace( '__RESISTANCE__', drugtext ) \
-                    .replace( '__FLAVOR__',       flavor ) )
+    page.append(template.replace( '__COLOR__',         color ) \
+                        .replace( '__CARDTITLE__',  cardtype ) \
+                        .replace( '__TOPTITLE__',  cardclass ) \
+                        .replace( '__NAME__',           name ) \
+                        .replace( '__DESC__',    description ) \
+                        .replace( '__RESISTANCE__', drugtext ) \
+                        .replace( '__FLAVOR__',       flavor ) )
+
+    print 'card ' + str(n) + ' : ' + name
+    
+    if len(page) == 9 :
+        f.write( '\\begin{tabular}{c c c}\n')
+        f.write( '\n&\n'.join(page[0:3]) )
+        f.write( '\n\\\\\n' )
+        f.write( '\n&\n'.join(page[3:6]) )
+        f.write( '\n\\\\\n' )
+        f.write( '\n&\n'.join(page[6:9]) )
+        f.write( '\n\\end{tabular}\n\\cleardoublepage' )
+        print '----'
+
+        page = []
+
+
 f.write( footer )
 f.close()
