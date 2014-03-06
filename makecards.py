@@ -3,7 +3,13 @@ import csv
 
 BASENAME = 'effluence'
 
-template = open('template.tex').read()
+header   = open('header.tex').read()
+template = open('card_template.tex').read()
+footer   = open('footer.tex').read()
+
+f = open( 'effluence_cards.tex', 'w' )
+
+f.write( header )
 
 for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
     if n == 0 : continue
@@ -26,8 +32,6 @@ for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
 
     if cardtype == 'Event' : drugtext = ''
 
-    f = open( BASENAME + '/' + BASENAME + '_card_' + str(n) + '.tex', 'w' )
-    
     f.write(template.replace( '__COLOR__',         color ) \
                     .replace( '__CARDTITLE__',  cardtype ) \
                     .replace( '__TOPTITLE__',  cardclass ) \
@@ -35,4 +39,5 @@ for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
                     .replace( '__DESC__',    description ) \
                     .replace( '__RESISTANCE__', drugtext ) \
                     .replace( '__FLAVOR__',       flavor ) )
-    f.close()
+f.write( footer )
+f.close()
