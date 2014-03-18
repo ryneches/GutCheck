@@ -8,8 +8,8 @@
 
 \pgfmathsetmacro{\cardroundingradius}{4mm}
 \pgfmathsetmacro{\striproundingradius}{3mm}
-\pgfmathsetmacro{\cardwidth}{5}
-\pgfmathsetmacro{\cardheight}{8}
+\pgfmathsetmacro{\cardwidth}{6}
+\pgfmathsetmacro{\cardheight}{9}
 \newcommand{\stripcolor}{__COLOR__}
 \pgfmathsetmacro{\stripwidth}{1.2}
 \pgfmathsetmacro{\strippadding}{0.1}
@@ -22,8 +22,9 @@
 \newcommand{\flavor}{\textit{__FLAVOR__}}
 \pgfmathsetmacro{\ruleheight}{0.1}
 \newcommand{\stripfontsize}{\Huge}
-\newcommand{\captionfontsize}{\LARGE}
 \newcommand{\textfontsize}{\large}
+%\newcommand{\captionfontsize}{\LARGE}
+\newcommand{\captionfontsize}{\large}
 
 \begin{tikzpicture}
     \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);

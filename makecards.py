@@ -2,6 +2,7 @@
 import csv
 
 BASENAME = 'effluence'
+CSVFILE  = 'microbiomecardsv2.csv'
 
 header   = open('header.tex').read()
 template = open('card_template.tex').read()
@@ -13,19 +14,22 @@ f.write( header )
 
 page = []
 
-for n,record in enumerate(csv.reader(open('microbiomecardsv1.csv'))) :
+for n,record in enumerate(csv.reader(open(CSVFILE))) :
     if n == 0 : continue
    
     cardtype,cardclass,name,description,resistance,flavor = record
     
-    if cardtype == 'Microbe' : color = 'green'
-    if cardtype == 'Event'   : color = 'red'
+    if cardtype == 'Microbe'    : color = 'green'
+    if cardtype == 'Event'      : color = 'red'
+    if cardtype == 'Infection'  : color = 'yellow'
+    if cardtype == 'Plasmid'    : color = 'cyan'
     
     drugs = []
     for drug in resistance.strip().split(',') :
+        if len(drug) <= 1 : continue
         drugs.append(drug.strip())
     
-    if len(drugs) == 0 and cardtype == 'Microbe' : drugtext = 'Not resistant'
+    if len(drugs) == 0 and cardtype == 'Microbe' : drugtext = 'Not resistant\n'
     if len(drugs) >  0 and cardtype == 'Microbe' :
         drugtext = 'Resistance: \\begin{itemize}\n'
         for drug in drugs :
