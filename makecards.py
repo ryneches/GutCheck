@@ -2,7 +2,7 @@
 import csv
 
 BASENAME = 'effluence'
-CSVFILE  = 'microbiomecardsv2.csv'
+CSVFILE  = 'microbiomecardsv4.csv'
 
 header   = open('header.tex').read()
 template = open('card_template.tex').read()
@@ -17,12 +17,14 @@ page = []
 for n,record in enumerate(csv.reader(open(CSVFILE))) :
     if n == 0 : continue
    
-    cardtype,cardclass,name,description,resistance,flavor = record
+    cardtype,cardclass,name,description,resistance,flavor,pos,neg = record
     
-    if cardtype == 'Microbe'    : color = 'green'
-    if cardtype == 'Event'      : color = 'red'
+    if cardtype == 'Microbe'    : color = 'orange'
+    if cardtype == 'Event'      : color = 'pink'
     if cardtype == 'Infection'  : color = 'yellow'
-    if cardtype == 'Plasmid'    : color = 'cyan'
+    if cardtype == 'Plasmid'    : color = 'magenta'
+    
+    if description == "" : description = "G"
     
     drugs = []
     for drug in resistance.strip().split(',') :
@@ -44,7 +46,9 @@ for n,record in enumerate(csv.reader(open(CSVFILE))) :
                         .replace( '__NAME__',           name ) \
                         .replace( '__DESC__',    description ) \
                         .replace( '__RESISTANCE__', drugtext ) \
-                        .replace( '__FLAVOR__',       flavor ) )
+                        .replace( '__FLAVOR__',       flavor ) \
+                        .replace( '__POS__',       pos ) \
+                        .replace( '__NEG__',       neg ) )
 
     print 'card ' + str(n) + ' : ' + name
     
