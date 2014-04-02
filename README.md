@@ -9,6 +9,8 @@ Design [inspired](http://tex.stackexchange.com/questions/47924/creating-playing-
 
 ## Rules
 
+*These rules are provisional, and subject to change.*
+
 In the microbiome game players compete to develop the healthiest microbiome, while attempting to disrupt each others efforts.
 
 ### Game preparation
