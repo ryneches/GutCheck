@@ -1,0 +1,2809 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=10mm]{geometry}
+\usepackage{tikz}
+\usepackage{pifont}
+\usepackage{graphicx}
+%\usepackage{fontawesome}
+%\newfontfamily{\FA}{FontAwesome Regular}
+
+\begin{document}
+
+\pgfmathsetmacro{\cardroundingradius}{4mm}
+\pgfmathsetmacro{\striproundingradius}{3mm}
+\pgfmathsetmacro{\cardwidth}{6}
+\pgfmathsetmacro{\cardheight}{9}
+\pgfmathsetmacro{\stripwidth}{1.2}
+\pgfmathsetmacro{\strippadding}{0.1}
+\pgfmathsetmacro{\textpadding}{0.3}
+\pgfmathsetmacro{\ruleheight}{0.1}
+\newcommand{\stripfontsize}{\Huge}
+\newcommand{\captionfontsize}{\LARGE}
+%\newcommand{\captionfontsize}{\Large}
+\newcommand{\textfontsize}{\large}
+
+% Font Awesome icons
+
+%\newcommand{\event_icon}{ \symbol{"\f0e7"} }
+%\newcommand{\microbe_icon}{ \symbol{"\f0c3"} }
+%\newcommand{\infection_icon}{ \symbol{"\f0fa"} }
+%\newcommand{\plasmid_icon}{ \symbol{"\f085"} }
+\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Clostridium botulin (botulism)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you cannot play any food cards (salad, bread, milk, lasagna).}\\
+        {\small \small Resistance: \begin{itemize}
+\item Ampicillin
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is responsible for botulism, a kind of food poisoning}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Clostridium botulin (botulism)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you cannot play any food cards (salad, bread, milk, lasagna).}\\
+        {\small \small Resistance: \begin{itemize}
+\item Ampicillin
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is responsible for botulism, a kind of food poisoning}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Clostridium dificile}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you cannot play any "beneficial only" microbes (except using "Probiotics").}\\
+        {\small \small Resistance: \begin{itemize}
+\item Kanamycin
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Antiobiotic-resistant C. dificile is an increasing problem in hospitals}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Clostridium dificile}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you cannot play any "beneficial only" microbes (except using "Probiotics").}\\
+        {\small \small Resistance: \begin{itemize}
+\item Kanamycin
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Antiobiotic-resistant C. dificile is an increasing problem in hospitals}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Yersinia pestis (plague)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Kanamycin
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This is the microbe responsible for bubonic plague}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Yersinia pestis (plague)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Kanamycin
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This is the microbe responsible for bubonic plague}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Salmonella enterica}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Ampicillin
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A common source of food poisoning, often associated with poultry}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Salmonella enterica}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Ampicillin
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A common source of food poisoning, often associated with poultry}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Mycobacterium leprae (leprosy)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Once a significant problem, leprosy is now treatable with antibiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Pathogen}}\\ 
+        {\textfontsize \textit {\textbf{Mycobacterium leprae (leprosy)}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small …}\\
+        {\small \small Resistance: \begin{itemize}
+\item Tetracycline
+\end{itemize}
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Once a significant problem, leprosy is now treatable with antibiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus reuteri }}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin B12 when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Humans are unable to synthesize this vitamin alone}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus reuteri }}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin B12 when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Humans are unable to synthesize this vitamin alone}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Bifidobacterium longum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin B1 (thiamine) when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Humans are unable to synthesize this vitamin alone}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Bifidobacterium longum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin B1 (thiamine) when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Humans are unable to synthesize this vitamin alone}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Escherichia coli}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin K when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{E. coli is normally an important part of your gut microbiome}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 2}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Escherichia coli}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Synthesizes vitamin K when in beneficial zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{E. coli is normally an important part of your gut microbiome}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Fusobacterium nucleatum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. }\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Common in humans, but overrepresented in some health issues}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Fusobacterium nucleatum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. }\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Common in humans, but overrepresented in some health issues}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Fusobacterium nucleatum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. }\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Common in humans, but overrepresented in some health issues}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L/G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus rhamnosus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest lactose and grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{While generally considered safe (even used in probiotics), L. rhamnosus can also cause problems.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L/G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus rhamnosus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest lactose and grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{While generally considered safe (even used in probiotics), L. rhamnosus can also cause problems.}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G/P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Prevotella melaninogenica}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest grains and plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{P. melaninogenica lives in the mouth and can both help digest carbohydrates and lead to peridontal disease}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G/P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Prevotella melaninogenica}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest grains and plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{P. melaninogenica lives in the mouth and can both help digest carbohydrates and lead to peridontal disease}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P/L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Treponema carateum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest plants and lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{T. carateum has been known to cause human disease, but members of this genus may also be important in digesting fiber.}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1}; \draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P/L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Opportunistic}}\\ 
+        {\textfontsize \textit {\textbf{Treponema carateum}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in your beneficial zone you can digest plants and lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{T. carateum has been known to cause human disease, but members of this genus may also be important in digesting fiber.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Micavibrio aeruginosavorus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{M. aeruginosavorus is being studied as a living antibacterial}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Micavibrio aeruginosavorus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{M. aeruginosavorus is being studied as a living antibacterial}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Micavibrio aeruginosavorus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{M. aeruginosavorus is being studied as a living antibacterial}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus acidophilus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is common in dairy products and probiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus acidophilus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is common in dairy products and probiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus acidophilus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is common in dairy products and probiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Lactobacillus acidophilus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest lactose.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{This microbe is common in dairy products and probiotics}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Rothia mucilaginosa}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Rothia mucilaginosa}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Rothia mucilaginosa}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Rothia mucilaginosa}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest grains.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Bacteroides ovatus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{B. ovatus is found in most people and can help digest dietary fiber}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Bacteroides ovatus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{B. ovatus is found in most people and can help digest dietary fiber}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Bacteroides ovatus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{B. ovatus is found in most people and can help digest dietary fiber}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[orange,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Microbe \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{Beneficial}}\\ 
+        {\textfontsize \textit {\textbf{Bacteroides ovatus}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small When this species is in play you can digest plants.}\\
+        {\small \small Not resistant
+}
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{B. ovatus is found in most people and can help digest dietary fiber}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Prebiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card allows you to play an additional microbe this turn}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Prebiotics are non-digestable compounds that stimulate bacterial growth or activity}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[yellow,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Infection \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Fungal Infection}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If target player has less than three microbes in their beneficial zone they lose 2 health during each checkup.  Discard when they have three or more microbes in their beneficial zone.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A healthy microbiome helps protect against fungal infections}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[yellow,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Infection \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Fungal Infection}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If target player has less than three microbes in their beneficial zone they lose 2 health during each checkup.  Discard when they have three or more microbes in their beneficial zone.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A healthy microbiome helps protect against fungal infections}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -4};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[yellow,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Infection \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Nosocomial Infection}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Only playable on a player who has received antibiotics or a fecal transplant this game.  Remove this card when a player gains health (not including checkups).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{"Nosocomial infection" is the medical term for a hospital-aquired infection.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -4};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[yellow,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Infection \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Nosocomial Infection}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Only playable on a player who has received antibiotics or a fecal transplant this game.  Remove this card when a player gains health (not including checkups).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{"Nosocomial infection" is the medical term for a hospital-aquired infection.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Salad}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Feed those microbes…}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Salad}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Feed those microbes…}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Salad}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Feed those microbes…}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bread}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Not Wonder Bread}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bread}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Not Wonder Bread}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries G};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bread}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Not Wonder Bread}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Milk}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{"Milk; it does a body good"}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Milk}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{"Milk; it does a body good"}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Milk}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{"Milk; it does a body good"}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 4};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P/G/L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Lasagna}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest plants, grains, and lactose, gain 4 health immediately.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Mmmmm…. Lasagna.}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 4};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries P/G/L};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Lasagna}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have the ability to digest plants, grains, and lactose, gain 4 health immediately.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Mmmmm…. Lasagna.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -3};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Fecal Transplant}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card removes all cards from your pathogen zone (regardless of resistance), you lose 3 health.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Seriously, these exist}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -3};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Fecal Transplant}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small This card removes all cards from your pathogen zone (regardless of resistance), you lose 3 health.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Seriously, these exist}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Vitamins}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Probably better in your gut than in a pill}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Vitamins}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Probably better in your gut than in a pill}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[green,fill=green] (3.7,.75) circle (4ex); \node at (3.7,0.75) {\LARGE \bfseries 1};
+	\draw[pink,fill=pink] (2.15,.75) circle (4ex); \node at (2.15,0.75) {\LARGE \bfseries V};
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Vitamins}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Probably better in your gut than in a pill}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Homeopathy}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Play this card for no effect whatsoever.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{But hey, no side effects.}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bacteriophage therapy}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Destroy any one microbe in play.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Bacteriophages are viruses that attack only bacteria}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bacteriophage therapy}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Destroy any one microbe in play.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Bacteriophages are viruses that attack only bacteria}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Lateral gene transfer}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any plasmid in play to another microbe within the same player.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Microbes love to share}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Lateral gene transfer}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any plasmid in play to another microbe within the same player.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Microbes love to share}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Lateral gene transfer}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any plasmid in play to another microbe within the same player.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Microbes love to share}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Probiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Draw cards from the deck and place the first non-pathogen Microbe in your beneficial area. Reshuffle deck afterwards. Does not count as playing a microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Probiotics are defined as microbes that have a putative health benefit when ingested}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Probiotics}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Draw cards from the deck and place the first non-pathogen Microbe in your beneficial area. Reshuffle deck afterwards. Does not count as playing a microbe this turn.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Probiotics are defined as microbes that have a putative health benefit when ingested}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Tetracycline resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Tetracycline.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Kanamycin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Kanamycin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[magenta,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Plasmid \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Ampicillin resistance plasmid}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Gives any single microbe resistance to Ampicillin.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{A plasmid is a small circular piece of DNA containing genetic information}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Change in health}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Move any opportunistic microbe from beneficial to pathogen, or vice versa.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Changes in your health or the composition of your microbe can cause some species to run amok}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Tetracycline}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Once widely-used, resistance is now common}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Tetracycline}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Once widely-used, resistance is now common}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Tetracycline}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Once widely-used, resistance is now common}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Kanamycin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Produced by Streptomyces kanamyceticus}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Kanamycin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Produced by Streptomyces kanamyceticus}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Kanamycin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Produced by Streptomyces kanamyceticus}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Ampicillin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{From the penicillin family}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Ampicillin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{From the penicillin family}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -1};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Antibiotic: Ampicillin}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See "Plasmid" rules.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{From the penicillin family}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Microbial Diversity}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have at least 4 microbes in your beneficial zone, remove a microbe from your pathogen zone.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{There appears to be a correlation between diversity of microbiota and health}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Microbial Diversity}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small If you have at least 4 microbes in your beneficial zone, remove a microbe from your pathogen zone.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{There appears to be a correlation between diversity of microbiota and health}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Go to work sick}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small You lose 2 health and give a microbe from your pathogen zone to target player.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Stay home!}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	\draw[red,fill=red] (5.2,.75) circle (4ex); \node at (5.2,0.75) {\LARGE \bfseries -2};
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Go to work sick}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small You lose 2 health and give a microbe from your pathogen zone to target player.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Stay home!}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Airplane trip}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Each player passes one microbe in play to the player on their left (if that microbe is opportunistic, it moves to the same type of zone on the target player).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Sharing is caring}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Airplane trip}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Each player passes one microbe in play to the player on their left (if that microbe is opportunistic, it moves to the same type of zone on the target player).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Sharing is caring}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bus trip}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Each player passes one microbe in play to the player on their right (if that microbe is opportunistic, it moves to the same type of zone on the target player).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Sharing is caring}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\begin{tabular}{c c c}
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Bus trip}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Each player passes one microbe in play to the player on their right (if that microbe is opportunistic, it moves to the same type of zone on the target player).}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Sharing is caring}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Raid the pharmacy}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Search the deck for any antibiotic of your choice (tetracycline, kanamycin, or ampicillin). Show to all players.  Shuffle the deck afterwards.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{We're not suggesting you do this…}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[pink,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Event \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Raid the pharmacy}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Search the deck for any antibiotic of your choice (tetracycline, kanamycin, or ampicillin). Show to all players.  Shuffle the deck afterwards.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{We're not suggesting you do this…}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+\\
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+
+	
+	
+    \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \fill[teal,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {Checkup \rotatebox[origin=c]{-90}{\ding{49}}};
+    \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
+    {   {\captionfontsize \textbf{}}\\ 
+        {\textfontsize \textit {\textbf{Checkup}}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
+        {\small Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.}\\
+        {\small \small }
+        \rule{4cm}{0.4pt}
+        {\small \small \textit{Got a healthy microbiome?}}\\
+        
+    };
+\end{tikzpicture}
+
+\end{tabular}
+\cleardoublepage\end{document}

@@ -1,0 +1,136 @@
+Type,Class,Name,Description,Resistant to:,Flavor text,Pos,Neg,Other
+Microbe,Pathogen,Clostridium botulin (botulism),"When this species is in play you cannot play any food cards (salad, bread, milk, lasagna).","Ampicillin,Tetracycline","This microbe is responsible for botulism, a kind of food poisoning",0,-2,0
+Microbe,Pathogen,Clostridium botulin (botulism),"When this species is in play you cannot play any food cards (salad, bread, milk, lasagna).","Ampicillin,Tetracycline","This microbe is responsible for botulism, a kind of food poisoning",0,-2,0
+Microbe,Pathogen,Clostridium dificile,"When this species is in play you cannot play any ""beneficial only"" microbes (except using ""Probiotics"").","Kanamycin,Tetracycline",Antiobiotic-resistant C. dificile is an increasing problem in hospitals,0,-2,0
+Microbe,Pathogen,Clostridium dificile,"When this species is in play you cannot play any ""beneficial only"" microbes (except using ""Probiotics"").","Kanamycin,Tetracycline",Antiobiotic-resistant C. dificile is an increasing problem in hospitals,0,-2,0
+Microbe,Pathogen,Yersinia pestis (plague),…,Kanamycin,This is the microbe responsible for bubonic plague,0,-2,0
+Microbe,Pathogen,Yersinia pestis (plague),…,Kanamycin,This is the microbe responsible for bubonic plague,0,-2,0
+Microbe,Pathogen,Salmonella enterica,…,Ampicillin,"A common source of food poisoning, often associated with poultry",0,-2,0
+Microbe,Pathogen,Salmonella enterica,…,Ampicillin,"A common source of food poisoning, often associated with poultry",0,-2,0
+Microbe,Pathogen,Mycobacterium leprae (leprosy),…,Tetracycline,"Once a significant problem, leprosy is now treatable with antibiotics",0,-2,0
+Microbe,Pathogen,Mycobacterium leprae (leprosy),…,Tetracycline,"Once a significant problem, leprosy is now treatable with antibiotics",0,-2,0
+Microbe,Opportunistic,Lactobacillus reuteri ,Synthesizes vitamin B12 when in beneficial zone.,,Humans are unable to synthesize this vitamin alone,2,-1,V
+Microbe,Opportunistic,Lactobacillus reuteri ,Synthesizes vitamin B12 when in beneficial zone.,,Humans are unable to synthesize this vitamin alone,2,-1,V
+Microbe,Opportunistic,Bifidobacterium longum,Synthesizes vitamin B1 (thiamine) when in beneficial zone.,,Humans are unable to synthesize this vitamin alone,2,-1,V
+Microbe,Opportunistic,Bifidobacterium longum,Synthesizes vitamin B1 (thiamine) when in beneficial zone.,,Humans are unable to synthesize this vitamin alone,2,-1,V
+Microbe,Opportunistic,Escherichia coli,Synthesizes vitamin K when in beneficial zone.,,E. coli is normally an important part of your gut microbiome,2,-1,V
+Microbe,Opportunistic,Escherichia coli,Synthesizes vitamin K when in beneficial zone.,,E. coli is normally an important part of your gut microbiome,2,-1,V
+Microbe,Opportunistic,Fusobacterium nucleatum,"If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. ",,"Common in humans, but overrepresented in some health issues",1,-1,0
+Microbe,Opportunistic,Fusobacterium nucleatum,"If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. ",,"Common in humans, but overrepresented in some health issues",1,-1,0
+Microbe,Opportunistic,Fusobacterium nucleatum,"If less than 3 microbes in your beneficial zone at end of turn, becomes a pathogen.  Returns at end of any turn you have 3+ microbes there. ",,"Common in humans, but overrepresented in some health issues",1,-1,0
+Microbe,Opportunistic,Lactobacillus rhamnosus,When this species is in your beneficial zone you can digest lactose and grains.,,"While generally considered safe (even used in probiotics), L. rhamnosus can also cause problems.",1,-2,L/G
+Microbe,Opportunistic,Lactobacillus rhamnosus,When this species is in your beneficial zone you can digest lactose and grains.,,"While generally considered safe (even used in probiotics), L. rhamnosus can also cause problems.",1,-2,L/G
+Microbe,Opportunistic,Prevotella melaninogenica,When this species is in your beneficial zone you can digest grains and plants.,,P. melaninogenica lives in the mouth and can both help digest carbohydrates and lead to peridontal disease,1,-2,G/P
+Microbe,Opportunistic,Prevotella melaninogenica,When this species is in your beneficial zone you can digest grains and plants.,,P. melaninogenica lives in the mouth and can both help digest carbohydrates and lead to peridontal disease,1,-2,G/P
+Microbe,Opportunistic,Treponema carateum,When this species is in your beneficial zone you can digest plants and lactose.,,"T. carateum has been known to cause human disease, but members of this genus may also be important in digesting fiber.",1,-2,P/L
+Microbe,Opportunistic,Treponema carateum,When this species is in your beneficial zone you can digest plants and lactose.,,"T. carateum has been known to cause human disease, but members of this genus may also be important in digesting fiber.",1,-2,P/L
+Microbe,Beneficial,Micavibrio aeruginosavorus,During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.,,M. aeruginosavorus is being studied as a living antibacterial,1,0,0
+Microbe,Beneficial,Micavibrio aeruginosavorus,During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.,,M. aeruginosavorus is being studied as a living antibacterial,1,0,0
+Microbe,Beneficial,Micavibrio aeruginosavorus,During your turn you may sacrifice this microbe to destroy a microbe in your pathogen zone.,,M. aeruginosavorus is being studied as a living antibacterial,1,0,0
+Microbe,Beneficial,Lactobacillus acidophilus,When this species is in play you can digest lactose.,,This microbe is common in dairy products and probiotics,1,0,L
+Microbe,Beneficial,Lactobacillus acidophilus,When this species is in play you can digest lactose.,,This microbe is common in dairy products and probiotics,1,0,L
+Microbe,Beneficial,Lactobacillus acidophilus,When this species is in play you can digest lactose.,,This microbe is common in dairy products and probiotics,1,0,L
+Microbe,Beneficial,Lactobacillus acidophilus,When this species is in play you can digest lactose.,,This microbe is common in dairy products and probiotics,1,0,L
+Microbe,Beneficial,Rothia mucilaginosa,When this species is in play you can digest grains.,,R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown,1,0,G
+Microbe,Beneficial,Rothia mucilaginosa,When this species is in play you can digest grains.,,R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown,1,0,G
+Microbe,Beneficial,Rothia mucilaginosa,When this species is in play you can digest grains.,,R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown,1,0,G
+Microbe,Beneficial,Rothia mucilaginosa,When this species is in play you can digest grains.,,R. mucilaginosa can degrade gluten in the human mouth but the importance of this is unknown,1,0,G
+Microbe,Beneficial,Bacteroides ovatus,When this species is in play you can digest plants.,,B. ovatus is found in most people and can help digest dietary fiber,1,0,P
+Microbe,Beneficial,Bacteroides ovatus,When this species is in play you can digest plants.,,B. ovatus is found in most people and can help digest dietary fiber,1,0,P
+Microbe,Beneficial,Bacteroides ovatus,When this species is in play you can digest plants.,,B. ovatus is found in most people and can help digest dietary fiber,1,0,P
+Microbe,Beneficial,Bacteroides ovatus,When this species is in play you can digest plants.,,B. ovatus is found in most people and can help digest dietary fiber,1,0,P
+Event,,Prebiotics,This card allows you to play an additional microbe this turn.,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Event,,Prebiotics,This card allows you to play an additional microbe this turn.,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Event,,Prebiotics,This card allows you to play an additional microbe this turn.,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Event,,Prebiotics,This card allows you to play an additional microbe this turn.,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Event,,Prebiotics,This card allows you to play an additional microbe this turn.,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Event,,Prebiotics,This card allows you to play an additional microbe this turn,,Prebiotics are non-digestable compounds that stimulate bacterial growth or activity,0,0,0
+Infection,,Fungal Infection,If target player has less than three microbes in their beneficial zone they lose 2 health during each checkup.  Discard when they have three or more microbes in their beneficial zone.,,A healthy microbiome helps protect against fungal infections,0,-2,0
+Infection,,Fungal Infection,If target player has less than three microbes in their beneficial zone they lose 2 health during each checkup.  Discard when they have three or more microbes in their beneficial zone.,,A healthy microbiome helps protect against fungal infections,0,-2,0
+Infection,,Nosocomial Infection,Only playable on a player who has received antibiotics or a fecal transplant this game.  Remove this card when a player gains health (not including checkups).,,"""Nosocomial infection"" is the medical term for a hospital-aquired infection.",0,-4,0
+Infection,,Nosocomial Infection,Only playable on a player who has received antibiotics or a fecal transplant this game.  Remove this card when a player gains health (not including checkups).,,"""Nosocomial infection"" is the medical term for a hospital-aquired infection.",0,-4,0
+Event,,Salad,"If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.",,Feed those microbes…,1,0,P
+Event,,Salad,"If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.",,Feed those microbes…,1,0,P
+Event,,Salad,"If you have the ability to digest plants, gain 1 health immediately for each microbe with that ability.",,Feed those microbes…,1,0,P
+Event,,Bread,"If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.",,Not Wonder Bread,1,0,G
+Event,,Bread,"If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.",,Not Wonder Bread,1,0,G
+Event,,Bread,"If you have the ability to digest grains, gain 1 health immediately for each microbe with that ability.",,Not Wonder Bread,1,0,G
+Event,,Milk,"If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.",,"""Milk; it does a body good""",1,0,L
+Event,,Milk,"If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.",,"""Milk; it does a body good""",1,0,L
+Event,,Milk,"If you have the ability to digest lactose, gain 1 health immediately for each microbe with that ability.",,"""Milk; it does a body good""",1,0,L
+Event,,Lasagna,"If you have the ability to digest plants, grains, and lactose, gain 4 health immediately.",,Mmmmm…. Lasagna.,4,0,P/G/L
+Event,,Lasagna,"If you have the ability to digest plants, grains, and lactose, gain 4 health immediately.",,Mmmmm…. Lasagna.,4,0,P/G/L
+Event,,Fecal Transplant,"This card removes all cards from your pathogen zone (regardless of resistance), you lose 3 health.",,"Seriously, these exist",0,-3,0
+Event,,Fecal Transplant,"This card removes all cards from your pathogen zone (regardless of resistance), you lose 3 health.",,"Seriously, these exist",0,-3,0
+Event,,Vitamins,"For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.",,Probably better in your gut than in a pill,1,0,V
+Event,,Vitamins,"For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.",,Probably better in your gut than in a pill,1,0,V
+Event,,Vitamins,"For each vitamin producing microbe in your beneficial zone, gain 1 health immediately.",,Probably better in your gut than in a pill,1,0,V
+Event,,Homeopathy,Play this card for no effect whatsoever.,,"But hey, no side effects.",0,0,0
+Event,,Bacteriophage therapy,Destroy any one microbe in play.,,Bacteriophages are viruses that attack only bacteria,0,0,0
+Event,,Bacteriophage therapy,Destroy any one microbe in play.,,Bacteriophages are viruses that attack only bacteria,0,0,0
+Event,,Lateral gene transfer,Move any plasmid in play to another microbe within the same player.,,Microbes love to share,0,0,0
+Event,,Lateral gene transfer,Move any plasmid in play to another microbe within the same player.,,Microbes love to share,0,0,0
+Event,,Lateral gene transfer,Move any plasmid in play to another microbe within the same player.,,Microbes love to share,0,0,0
+Event,,Probiotics,Draw cards from the deck and place the first non-pathogen Microbe in your beneficial area. Reshuffle deck afterwards. Does not count as playing a microbe this turn.,,Probiotics are defined as microbes that have a putative health benefit when ingested,0,0,0
+Event,,Probiotics,Draw cards from the deck and place the first non-pathogen Microbe in your beneficial area. Reshuffle deck afterwards. Does not count as playing a microbe this turn.,,Probiotics are defined as microbes that have a putative health benefit when ingested,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Tetracycline resistance plasmid,Gives any single microbe resistance to Tetracycline.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Kanamycin resistance plasmid,Gives any single microbe resistance to Kanamycin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Plasmid,,Ampicillin resistance plasmid,Gives any single microbe resistance to Ampicillin.,,A plasmid is a small circular piece of DNA containing genetic information,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Change in health,"Move any opportunistic microbe from beneficial to pathogen, or vice versa.",,Changes in your health or the composition of your microbe can cause some species to run amok,0,0,0
+Event,,Antibiotic: Tetracycline,"Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See ""Plasmid"" rules.",,"Once widely-used, resistance is now common",0,-1,0
+Event,,Antibiotic: Tetracycline,"Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See ""Plasmid"" rules.",,"Once widely-used, resistance is now common",0,-1,0
+Event,,Antibiotic: Tetracycline,"Target player may remove up to 2 non-tetracycline resistant microbes from their pathogen zone, and loses half of the non-tetracycline resistant microbes in their beneficial zone (rounded down) and 1 health.  See ""Plasmid"" rules.",,"Once widely-used, resistance is now common",0,-1,0
+Event,,Antibiotic: Kanamycin,"Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,Produced by Streptomyces kanamyceticus,0,-1,0
+Event,,Antibiotic: Kanamycin,"Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,Produced by Streptomyces kanamyceticus,0,-1,0
+Event,,Antibiotic: Kanamycin,"Target player may remove up to 2 non-kanamycin resistant microbes from their pathogen zone, and loses half of the non-kanamycin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,Produced by Streptomyces kanamyceticus,0,-1,0
+Event,,Antibiotic: Ampicillin,"Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,From the penicillin family,0,-1,0
+Event,,Antibiotic: Ampicillin,"Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,From the penicillin family,0,-1,0
+Event,,Antibiotic: Ampicillin,"Target player may remove up to 2 non-ampicillin resistant microbes from their pathogen zone, and loses half of the non-ampicillin resistant microbes in their beneficial zone (rounded down) and 1 health. See ""Plasmid"" rules.",,From the penicillin family,0,-1,0
+Event,,Microbial Diversity,"If you have at least 4 microbes in your beneficial zone, remove a microbe from your pathogen zone.",,There appears to be a correlation between diversity of microbiota and health,0,0,0
+Event,,Microbial Diversity,"If you have at least 4 microbes in your beneficial zone, remove a microbe from your pathogen zone.",,There appears to be a correlation between diversity of microbiota and health,0,0,0
+Event,,Go to work sick,You lose 2 health and give a microbe from your pathogen zone to target player.,,Stay home!,0,-2,0
+Event,,Go to work sick,You lose 2 health and give a microbe from your pathogen zone to target player.,,Stay home!,0,-2,0
+Event,,Airplane trip,"Each player passes one microbe in play to the player on their left (if that microbe is opportunistic, it moves to the same type of zone on the target player).",,Sharing is caring,0,0,0
+Event,,Airplane trip,"Each player passes one microbe in play to the player on their left (if that microbe is opportunistic, it moves to the same type of zone on the target player).",,Sharing is caring,0,0,0
+Event,,Bus trip,"Each player passes one microbe in play to the player on their right (if that microbe is opportunistic, it moves to the same type of zone on the target player).",,Sharing is caring,0,0,0
+Event,,Bus trip,"Each player passes one microbe in play to the player on their right (if that microbe is opportunistic, it moves to the same type of zone on the target player).",,Sharing is caring,0,0,0
+Event,,Raid the pharmacy,"Search the deck for any antibiotic of your choice (tetracycline, kanamycin, or ampicillin). Show to all players.  Shuffle the deck afterwards.",,We're not suggesting you do this…,0,0,0
+Event,,Raid the pharmacy,"Search the deck for any antibiotic of your choice (tetracycline, kanamycin, or ampicillin). Show to all players.  Shuffle the deck afterwards.",,We're not suggesting you do this…,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0
+Checkup,,Checkup,Every player scores their microbiome.  Positive health for cards in the beneficial zone and negative health for cards in the pathogen zone.  Health gain/loss indicated in the green/red circles.,,Got a healthy microbiome?,0,0,0

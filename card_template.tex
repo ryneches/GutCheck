@@ -1,15 +1,13 @@
 
 \begin{tikzpicture}
 
-	\draw[red,fill=red] (5.2,.9) circle (4ex);
-	\draw[red,fill=green] (3.7,.9) circle (4ex); 
-	\node at (3.7,0.9) {\LARGE \bfseries __POS__}; 
-	\node at (5.2,0.9) {\LARGE \bfseries __NEG__};
+	__CIRCLE__
+	__FOOD__
     \draw[rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
     \fill[__COLOR__,rounded corners=\striproundingradius] (\strippadding,\strippadding) rectangle (\strippadding+\stripwidth,\cardheight-\strippadding) node[rotate=90,above left,black,font=\stripfontsize] {__CARDTITLE__ \rotatebox[origin=c]{-90}{\ding{49}}};
     \node[text width=(\cardwidth-\strippadding-\stripwidth-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\stripwidth+\textpadding,\cardheight-\textpadding) 
     {   {\captionfontsize \textbf{__TOPTITLE__}}\\ 
-        {\textfontsize \textit{__NAME__}}\\
+        {\textfontsize \textit {\textbf{__NAME__}}}\\
         \tikz{\fill (0,0) rectangle (\cardwidth-\strippadding-\stripwidth-2*\textpadding,\ruleheight);}\\
         {\small __DESC__}\\
         {\small \small __RESISTANCE__}
