@@ -1,4 +1,4 @@
-# Effluence : The Microbiome Game
+# Gut Check : The Microbiome Game
 
 Defend your health with the help of your microbial community!
 
