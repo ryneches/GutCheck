@@ -1,5 +1,12 @@
 # Gut Check : The Microbiome Game!
 
+Defend your health with the help of your microbial community! A game
+by David Coil, Jonathan Eisen, and Russell Neches.
+
+Card design
+[inspired](http://tex.stackexchange.com/questions/47924/creating-playing-cards-using-tikz)
+by Stackexchange user Tom Bombadil.
+
 In *Gut Check : The Microbiome Game!* players compete to develop the
 healthiest microbiome, while attempting to disrupt each others
 efforts.
@@ -14,72 +21,74 @@ then give you a fungal infection"*
 
 ##Game preparation
 
--Give one play sheet to each player, put the board in the center
+  - Give one play sheet to each player, put the board in the center
 
--Remove all 6 "Checkup" cards (teal) from the deck
+  - Remove all 6 "Checkup" cards (teal) from the deck
 
--Set all plasmid cards (purple) in a face-up pile as indicated on
- board
+  - Set all plasmid cards (purple) in a face-up pile as indicated on
+    board
 
--Shuffle the remaining cards and give 5 to each player (if none are
-microbes, that player may redraw)
+  - Shuffle the remaining cards and give 5 to each player (if none are
+    microbes, that player may redraw)
 
--Deal 3 cards face up as indicated on board
+  - Deal 3 cards face up as indicated on board
 
--Shuffle the "*Checkup*" cards into the main deck
+  - Shuffle the "*Checkup*" cards into the main deck
 
--The player who has most recently eaten yogurt goes first, play
-proceeds clockwise The Short Version of the Rules (for people who
-don't like to read)
+  - The player who has most recently eaten yogurt goes first, play
+    proceeds clockwise The Short Version of the Rules (for people who
+    don't like to read)
 
--Play as many cards per turn as you'd like.
+  - Play as many cards per turn as you'd like.
 
--You can only play one microbe per turn. Pathogens go in pathogen
-zone, Beneficials go in beneficial zone, Opportunistics go in
-either. You can play microbes on any player.
+  - You can only play one microbe per turn. Pathogens go in pathogen
+    zone, Beneficials go in beneficial zone, Opportunistics go in
+    either. You can play microbes on any player.
 
--Once per turn you can discard a card and take one of the face-up
- cards from the middle
+  - Once per turn you can discard a card and take one of the face-up
+    cards from the middle
 
--At the end of your turn, draw back up to 5 cards
+  - At the end of your turn, draw back up to 5 cards
 
--When a "*Checkup*" event is drawn everyone scores their microbiome,
- points are indicated on the cards depending on which zone the microbe
- is in.
+  - When a "*Checkup*" event is drawn everyone scores their
+    microbiome, points are indicated on the cards depending on which
+    zone the microbe is in.
 
--If someone plays an "*Antibiotic*" card, then read the rules below
- called "Plasmids"
+  - If someone plays an "*Antibiotic*" card, then read the rules below
+    called "Plasmids"
+ 
+  - The game ends when the last card is drawn. Each other player gets
+    a final turn and then there is a final Checkup. Player with the
+    most health wins.
 
--The game ends when the last card is drawn. Each other player gets a
-final turn and then there is a final Checkup. Player with the most
-health wins.
-
--Enjoy!
+Enjoy!
 
 ## The Actual Rules
 
 ### Card Types
 
-There are three types of cards in the main deck; Microbes, Events, and Infections.
+There are three types of cards in the main deck; **Microbes**,
+**Events**, and **Infections**.
 
--Microbes (Orange): These represent bacteria that you are using to
-either make a healthier microbiome for yourself, or to disrupt your
-opponents microbiome(s). See the "Main Phase" rules for playing
-Microbes.
+  - Microbes (Orange): These represent bacteria that you are using to
+    either make a healthier microbiome for yourself, or to disrupt
+    your opponents microbiome(s). See the "Main Phase" rules for
+    playing Microbes.
 
--Events (Pink): These cards are played, their effect is resolved, and
-they are discarded.  Some of them increase or decrease a player's
-health. These effects are indicated in the green and red circles on
-the card and occur instantly. You can play events for no effect, but
-only if there is a valid target (e.g. "*Milk*" can be played even it
-has no effect, but "*Lateral Gene Transfer*" can only be played if a
-plasmid is in play)
+  - Events (Pink): These cards are played, their effect is resolved,
+    and they are discarded.  Some of them increase or decrease a
+    player's health. These effects are indicated in the green and red
+    circles on the card and occur instantly. You can play events for
+    no effect, but only if there is a valid target (e.g. "*Milk*" can
+    be played even it has no effect, but "*Lateral Gene Transfer*" can
+    only be played if a plasmid is in play)
 
--Infections (Yellow): Infections are played on a player and remain in
-play until the conditions described on the card are fulfilled. They
-are not considered Microbes and are therefore immune to cards such as
-"*Bacteriophage therapy*" and the various antibiotics.  They are
-scored during checkups, similar to Microbes.
+  - Infections (Yellow): Infections are played on a player and remain
+    in play until the conditions described on the card are
+    fulfilled. They are not considered Microbes and are therefore
+    immune to cards such as "*Bacteriophage therapy*" and the various
+    antibiotics.  They are scored during checkups, similar to
+    Microbes.
 
 
 ### Turn order
@@ -89,19 +98,15 @@ you want, with the exception of Microbes. You can only play one
 Microbe per turn (either on yourself or another player).  You can
 never play cards during another players turn. Cards can be played in
 any order you'd like.
- 
   - *Playing a Microbe* : Pathogen Microbes can only be played in the
 Pathogen Zone.  Beneficial Microbes can only be played in the
 Beneficial Zone. Opportunistic Microbes can be played into either
 zone. Note that you can play a microbe on yourself, or on an opponent.
-
   - *Exchange (Optional)* : Discard one card and draw one of the face
 up cards. You may only do this once per turn but it can happen at any
 point during the main phase.  Replace the missing card with the top
 card of the deck.
-
 2. Draw back to 5 cards
-
 3. Turn ends
 
 ### Checkup Event (teal) 
@@ -161,7 +166,7 @@ continue play. Game end is as the same for 2-4 players (e.g. every
 player gets a final turn before the game-ending checkup).
 
 
-### Tips on Strategy (not needed to play the game)
+## Tips on Strategy (not needed to play the game)
 
 Don't forget to exchange cards through the middle. Think not only of
 cards that would benefit you but take negative cards that you don't
@@ -200,50 +205,3 @@ sure which ones. Likewise it's also unlikely that a single microbe
 could be responsible for the ability to digest milk, grains, or plants
 for example... but certainly our total microbiome is intimately
 involved in these processes.
-
-
-
-
-
-
-
-
-
-# Gut Check : The Microbiome Game
-
-Defend your health with the help of your microbial community!
-
-A game by David Coil, Jonathan Eisen, and Russell Neches
-
-Design [inspired](http://tex.stackexchange.com/questions/47924/creating-playing-cards-using-tikz) by Stackexchange user Tom Bombadil.
-﻿
-
-## Rules
-
-*These rules are provisional, and subject to change.*
-
-In the microbiome game players compete to develop the healthiest microbiome, while attempting to disrupt each others efforts.
-
-### Game preparation
-
- * Shuffle the deck and give 5 cards and one player sheet to each player
- * Deal 3 cards face up in the center of the table
- * The player who has most recently eaten yogurt goes first
-
-### Turn order
-
-1. **Exchange (Optional)** Discard one card and draw one of the face up cards.  You may only do this once per turn.   Replace the missing card with the top card of the deck.
-2. **Main Phase** You can only play one Microbe per turn (either on yourself or another player).  During the main phase you can play any number of non-Microbe cards.  You can never play cards during another players turn.
-  * *Playing a Microbe*:  Pathogen Microbes can only be played in the Pathogen Zone.  Beneficial Microbes can only be played in the Beneficial Zone.  Opportunistic Microbes can be played into either zone.  Note that you can play a microbe on yourself, or on an opponent.
-3. **Scoring** After your main phase is complete, you score your microbiome.  Microbes in your beneficial zone give points as indicated in the green circles on the card.   Microbes in your pathogen zone subtract points as indicated in the red circles on the card.
-4. **Draw back to 5 cards**
-5. **Turn ends**
-
-### Card Types
-
-There are four types of cards; Microbes, Events, Plasmids, and Infections.
-
- * **Microbes (Orange)**:  These represent (so far) bacteria that you are using to either make a healthier microbiome for yourself, or to disrupt your opponents microbiome(s).  See the "Main Phase" rules for playing Microbes.
- * **Events (Pink)**:  These cards are played, their effect is resolved, and they are discarded.  Some of them increase or decrease a player's health.  These effects are indicated in the green and red circles on the card.
- * **Plasmids (Blue)**:  These must be played onto Microbes and they stay in play unless the microbe carrying them is killed.  There are cards that can move them between microbes.
- * **Infections (Yellow)**:  Infections are played on a player and remain in play until the conditions described on the card are fulfilled.  The are not considered Microbes and are therefore immune to cards such as Bacteriophage therapy and the various antibiotics.
